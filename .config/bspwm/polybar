@@ -31,13 +31,13 @@ padding-left = 1
 padding-right = 2
 module-margin-left = 1
 module-margin-right = 2
-font-0 = RobotoMono:size=12;3
-font-1 = FontAwesome5Free:style=Solid:pixelsize=10;1
-font-2 = FontAwesome5Free:style=Regular:pixelsize=10;1
-font-3 = FontAwesome5Brands:pixelsize=10;1
+font-0 = RobotoMono:size=10;3
+font-1 = FontAwesome5Free:style=Solid:pixelsize=9;1
+font-2 = FontAwesome5Free:style=Regular:pixelsize=9;1
+font-3 = FontAwesome5Brands:pixelsize=9;1
 modules-left = bspwm
 modules-center = window
-modules-right = spotify memory cpu temperature wlan eth pulseaudio datetime
+modules-right = spotify memory cpu wlan eth bat1 bat0 pulseaudio datetime
 wm-restack = bspwm
 override-redirect = false
 cursor-click = pointer
@@ -126,11 +126,50 @@ label-connected = %essid% %signal%%
 
 [module/eth]
 type = internal/network
-interface = eno1
+interface = enp0s25
 interval = 3.0
 format-connected-prefix = " "
 format-connected-prefix-foreground = ${colors.primary}
 label-connected = %local_ip%
+
+[module/bat1]
+type = internal/battery
+full-at = 99
+battery = BAT1
+adapter = AC
+poll-interval = 5
+
+label-discharging = %percentage%%
+format-discharging-prefix = " "
+format-discharging-prefix-foreground = ${colors.primary}
+
+label-charging = %percentage%%
+format-charging-prefix = " "
+format-charging-prefix-foreground = ${colors.primary}
+
+label-full = %percentage%%
+format-full-prefix = " "
+format-full-prefix-foreground = ${colors.primary}
+
+[module/bat0]
+type = internal/battery
+full-at = 99
+battery = BAT0
+adapter = AC
+poll-interval = 5
+
+label-discharging = %percentage%%
+format-discharging-prefix = " "
+format-discharging-prefix-foreground = ${colors.primary}
+
+label-charging = %percentage%%
+format-charging-prefix = " "
+format-charging-prefix-foreground = ${colors.primary}
+
+label-full = %percentage%%
+format-full-prefix = " "
+format-full-prefix-foreground = ${colors.primary}
+
 
 [module/datetime]
 type = internal/date
