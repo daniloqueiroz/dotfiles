@@ -123,8 +123,11 @@ super + shift + g
 	bspc node -s biggest.window
 
 
-
-
-
-
+## Scratchpad
+# hide window
+super + v
+    bspc node -g hidden
+# un-hide window
+super + shift + v
+    bspc node (bspc query -N -n .hidden | tail -n1) -g hidden=off
 
