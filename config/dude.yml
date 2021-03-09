@@ -7,4 +7,5 @@ display:
   screensaver_timeout_secs: 300
 power:
   monitor_enabled: false  
-
+polkit:
+  agent: /usr/lib/x86_64-linux-gnu/polkit-mate/polkit-mate-authentication-agent-1

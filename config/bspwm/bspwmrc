@@ -1,11 +1,16 @@
 #! /bin/sh
 
+xrandr --output DP-2 --mode "3440x1440" --output eDP-1 --off
+bspc monitor eDP-1 --remove
+bspc monitor -g 3440x1440+0+0
+bspc monitor -d I II III IV V VI VII VIII IX X
+
 wmname LG3D
 pgrep -x sxhkd > /dev/null || sxhkd -c .config/bspwm/sxhkdrc &
 pgrep -x polybar > /dev/null || polybar -c .config/bspwm/polybar main &
-pgrep --full -x "dude session" > /dev/null || dude session &
+#pgrep --full -x "dude session" > /dev/null || dude session &
+feh --bg-fill ~/.config/wallpapers/
 
-bspc monitor -d I II III IV V VI VII VIII IX X
 
 bspc config border_width         2
 bspc config window_gap           5
