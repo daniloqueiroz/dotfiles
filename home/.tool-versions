@@ -1,4 +1,4 @@
 java temurin-22.0.0+36
-mdbook 0.4.36
 gradle 8.5
-python system
+gcloud 504.0.1
+nodejs 22.12.0

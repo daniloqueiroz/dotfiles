@@ -7,3 +7,7 @@ ForwardAgent yes
 Host nsm
     HostName nsm.duck-hamlet.ts.net
     User pi
+
+Host lab01
+    HostName lab01.duck-hamlet.ts.net
+    User pi
