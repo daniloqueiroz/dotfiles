@@ -43,7 +43,7 @@ function fish_right_prompt
     set_color $nord15
     echo -n "$TERMINALSESSION "
     set_color $nord7
-    echo -n "[C-a to detatch] "
+    echo -n "[C-u to detatch] "
     set_color normal
   end
 end

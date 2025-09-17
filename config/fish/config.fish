@@ -1,5 +1,11 @@
 # load files from conf.d dir
 if status is-interactive
+    if test -z "$TERMINALSESSION"; and test "$TERM_PROGRAM" = "ghostty"
+        # enter terminalsession if TERMINALSESSION is not set and running in Ghostty
+        /usr/bin/tsctl
+    end
+
+
     fzf_key_bindings
 
     for conf in ~/.config/fish/conf.d/*.fish
