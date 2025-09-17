@@ -53,3 +53,9 @@
   status = P !git push origin
   main = P !git push origin
   refs = F !git fetch --all
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
