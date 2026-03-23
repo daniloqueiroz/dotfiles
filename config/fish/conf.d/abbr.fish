@@ -1,17 +1,14 @@
-abbr --add a 'asdf'
-abbr --add b 'bat'
-
 abbr --add cs 'cheatsheet'
-abbr --add dk 'docker'
-
-abbr --add g 'git'
-abbr --add k 'kubectl'
 
 abbr --add pf 'pass-fzf'
-abbr --add sys 'systemctl'
+abbr --add v 'vim'
+abbr --add b 'bat'
+abbr --add gm 'gemini' 
 
-abbr --add tk 'task'
+abbr --add g 'git'
+abbr --add a 'asdf'
+abbr --add dk 'docker'
+abbr --add k 'kubectl'
+abbr --add sys 'systemctl'
 abbr --add tf 'terraform'
 abbr --add ts 'tailscale'
-
-abbr --add v 'vim'
