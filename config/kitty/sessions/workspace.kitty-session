@@ -1,0 +1,3 @@
+cd ~/workspace
+layout tall
+launch fish -i

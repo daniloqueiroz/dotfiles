@@ -1,0 +1,3 @@
+cd ~
+layout tall
+launch fish -i
