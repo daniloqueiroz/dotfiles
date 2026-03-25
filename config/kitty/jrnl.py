@@ -14,9 +14,9 @@ JRNL_TEMPLATE = "## {date}{title_suffix}\n\n"
 
 # Setup logging
 logging.basicConfig(
-    filename='/tmp/kitten-jrnl.log',
+    filename='/tmp/kittens.log',
     level=logging.DEBUG,
-    format='%(asctime)s - %(levelname)s - %(message)s'
+    format='%(asctime)s - %(levelname)s - %(module)s:%(funcName)s - %(message)s'
 )
 
 def get_journal_dir() -> Path:

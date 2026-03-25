@@ -7,9 +7,9 @@ from kitty.boss import Boss
 
 # Setup logging
 logging.basicConfig(
-    filename='/tmp/kitten-agents.log',
+    filename='/tmp/kittens.log',
     level=logging.DEBUG,
-    format='%(asctime)s - %(levelname)s - %(message)s'
+    format='%(asctime)s - %(levelname)s - %(module)s:%(funcName)s - %(message)s'
 )
 
 def get_folder_selection() -> Optional[str]:

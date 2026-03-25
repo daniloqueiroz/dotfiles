@@ -9,9 +9,9 @@ from kitty.boss import Boss
 
 # Setup logging
 logging.basicConfig(
-    filename='/tmp/kitten-notes.log',
+    filename='/tmp/kittens.log',
     level=logging.DEBUG,
-    format='%(asctime)s - %(levelname)s - %(message)s'
+    format='%(asctime)s - %(levelname)s - %(module)s:%(funcName)s - %(message)s'
 )
 
 def get_notes_dir() -> Path:

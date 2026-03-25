@@ -7,9 +7,9 @@ from kittens.tui.loop import debug
 
 # Setup logging
 logging.basicConfig(
-    filename='/tmp/kitten-files.log',
+    filename='/tmp/kittens.log',
     level=logging.DEBUG,
-    format='%(asctime)s - %(levelname)s - %(message)s'
+    format='%(asctime)s - %(levelname)s - %(module)s:%(funcName)s - %(message)s'
 )
 
 def main(args: List[str]) -> str:
