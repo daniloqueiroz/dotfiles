@@ -9,7 +9,7 @@ from typing import List, Optional, Tuple
 from kitty.boss import Boss
 
 # Constants
-DEFAULT_JRNL_DIR = "~/journal"
+DEFAULT_JRNL_DIR = "~/workspace/journal"
 JRNL_TEMPLATE = "## {date}{title_suffix}\n\n"
 
 # Setup logging

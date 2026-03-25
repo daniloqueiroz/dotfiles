@@ -13,9 +13,10 @@ logging.basicConfig(
     level=logging.DEBUG,
     format='%(asctime)s - %(levelname)s - %(module)s:%(funcName)s - %(message)s'
 )
+DEFAULT_NOTES_DIR = "~/workspace/notes"
 
 def get_notes_dir() -> Path:
-    path = os.environ.get("NOTES_DIR", "~/notes")
+    path = os.environ.get("NOTES_DIR", DEFAULT_NOTES_DIR)
     notes_path = Path(path).expanduser().resolve()
     notes_path.mkdir(parents=True, exist_ok=True)
     return notes_path
