@@ -24,7 +24,7 @@ def handle_result(args: List[str], answer: str, target_window_id: int, boss: Bos
         debug(f"folder: {answer}")
         if not answer:
            return
-        cmd = ['yazi']
+        cmd = ['xplr']
         tab_title = "Files"
 
         # Always launch a new tab
